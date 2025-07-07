@@ -218,7 +218,11 @@ footer {
     text-underline-offset: 10px;
 }
 
-
+@media (max-width:1530px) {
+    nav {
+        padding: 0 30px;
+    }
+}
 
 
 

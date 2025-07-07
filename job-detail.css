@@ -72,7 +72,7 @@ nav {
 
 .sign-btn{
     min-height: 10px;
-    min-width: 40px;
+    min-width: 50px;
     text-decoration: none;
     padding: 8px 10px;
     border: 2px solid rgb(32, 30, 67);
@@ -118,10 +118,11 @@ section{
         flex-direction: column;
         align-items: center;
     }
-    .job-card{
-        min-width: 330px;
+    nav {
+        padding: 0 30px;
     }
 }
+
 .left-sec {
     background-color: white;
     width: 70%;
@@ -155,7 +156,7 @@ section{
 }
 
 .job-card {
-  
+    min-width: 280px;
     background-color: white;
     padding: 30px;
     display: flex;
