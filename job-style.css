@@ -51,7 +51,7 @@ nav {
 }
 
 .icon-container {
-    width: 30px;
+    width:30px;
     height: 30px;
     
 }
@@ -92,37 +92,15 @@ nav {
 }
 
 .header {
-    margin-top: 50px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit , minmax(200px, 400px));
-    
+    min-width: 70%;
+    padding-top: 50px;
 }
-.header-title {
+h2 {
+    text-align: start;
+}
+h2 > a {
     text-decoration: none;
-    font-size: 100px;
-    color: rgb(32, 30, 67);
-    font-family: "Aref Ruqaa", serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
 }
-.header>div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.header > div > h1 {
-    font-size: 42px;
-
-}
-.header > div > p {
-    text-align: center;
-    font-size: 20px;
-}
-
-
 
 section {
     width: 100%;
@@ -131,9 +109,74 @@ section {
     flex-direction: column;
     justify-self: center ;
     align-items: center;
-    margin: 50px 15px 0 15px;
-    padding-block: 100px;
+    margin: 0 15px;
+    padding-block: 0 100px;
     gap: 20px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.filter-btn-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.filter-btn-div > div {
+    margin-right: 20px;
+    color: rgb(32, 30, 67);
+    font-size: 20px;
+}
+
+.filter-search-div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-search{
+    height: 35px;
+    width: 100%;
+    border: 2px  solid rgb(32, 30, 67);
+    border-radius: 5px;
+    padding: 0 5px 0 35px;
+    font-size: 20px;
+}
+
+
+.filter-btn,
+.add-job-btn{
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 2px solid rgb(32, 30, 67);
+    border-radius: 50px;
+    color: rgb(32, 30, 67);
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px;
+}
+.filter-btn:hover{
+    border-color: rgb(32, 30, 67, 0.01) ;
+    background-color: rgba(32, 30, 67, 0.5) ;
+    color: rgb(238, 238, 238);
+    box-shadow: 0 0 20px rgba(32, 30, 67, 0.5);
+}
+
+
+.active {
+    pointer-events: none;
+    background-color: rgb(32, 30, 67) ;
+    color: rgb(238, 238, 238);
+    box-shadow: 0 0 20px rgb(32, 30, 67);
 }
 
 .card-list{
@@ -146,7 +189,7 @@ section {
 }
 
 .card {
-    width: 250px;
+    width: 200px;
     height: 350px;
     text-decoration: none;
     color: rgb(32, 30, 67);
@@ -155,7 +198,7 @@ section {
     align-items: center;
     flex-direction: column;
     
-    padding-inline: 20px;
+    padding: 20px;
 
     list-style: none;
     border: 2px solid rgb(32, 30, 67);
@@ -174,27 +217,22 @@ section {
     width: 100%;
     height: 200px;
     box-sizing: border-box;
+    border-bottom: 2px solid;
+}
+img{
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
     
 }
-.card-img > p{
-    font-size: 52px;
-    text-align: center;
-}
-
-.card-img > .all-icon{
-    font-size: 40px;
-    text-align: center;
-}
-
 .card-des{
     width: 100%;
     height: 200px;
     
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-
 }
 .card-des> p {
     font-size: 18px;
@@ -202,11 +240,53 @@ section {
     margin-block: 10px 10px;
     
 }
-.card-des > span {
-    text-align: center;
-    font-size: 14px;
-    color: rgb(131, 131, 131);
+.card-des > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+.card-catagory {
+    
+    font-size: 16px;
+    color: rgb(131, 131, 131);
+    margin-right: 10px;
+}
+
+.star-rating {
+    color: gold; 
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.btn-div{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-btn{
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid rgb(32, 30, 67);
+    border-radius: 50px;
+    color: rgb(32, 30, 67);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+.book-btn:hover,
+.add-job-btn:hover {
+    background-color: rgb(32, 30, 67);
+    color: white;
+    box-shadow: 0px 0px 20px rgba(32, 30, 67, 0.5);
+}
+
 
 
 

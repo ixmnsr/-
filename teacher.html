@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الرئيسية</title>
-    <link rel="stylesheet" href="index-style.css">
+    <title>أستاذ</title>
+    <link rel="stylesheet" href="job-style.css">
 </head>
 <body> 
 
@@ -18,111 +18,186 @@
             </a>
         </div>
         <div class="nav-right">
-            <a class="sign-btn" href="log-in.html" target="_blank" >
+            <a class="sign-btn" href="log-in.html" >
                 تسجيل الدخول
             </a>
-            <a class="sign-btn" href="sign-in.html" target="_blank" >
+            <a class="sign-btn" href="sign-in.html" >
              إنشاء حساب
             </a>
         </div>
     </nav>
-    
-    <div class="header">
-        <p class="header-title">مِهَن </p>
-        <div>
-            <h1>فرصتك تبدأ من هنا</h1>
-            <p>في مِهَن، يمكنك نشر وظيفة أو طلب وظيفة بسهولة وفي دقائق</p>
-        </div>
-    </div>
 
     <section>
+        <div class="header">
+            <h2>
+                <a href="index.html">
+                    الرئيسية
+                </a>
+                /أستاذ
+            </h2>
+        </div>
+        <div class="filter">
+            <div class="filter-search-div">
+                <input type="search" placeholder="ابحث عن الطبيب" class="card-search">
+            </div>
+            <div class="filter-btn-div">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="Mathematics">رياضيات</button>
+                <button class="filter-btn" data-filter="Science">  علوم   </button>
+                <button class="filter-btn" data-filter="Computer">  حاسوب   </button>
+                <button class="filter-btn" data-filter="English">لغة إنجليزية</button>
+                <button class="filter-btn" data-filter="Arabic">لغة عربية</button>
+            </div>
+        </div>
 
-        <h2>
-             كل حرفة ولها تخصص – اختر ما يناسبك
-        </h2>
         <ul class="card-list">
-
-                <a  class="card" href="all.html" >
-                    <div class="card-img">
-                        <p class="all-icon">
-                            🩺👨‍🏫<br>🛠️💻
-                        </p>
-                    </div>
-                    <div class="card-des">
-                        <p>
-                            الكل
-                        </p>
-                        <span class="card-catagory">
-                            كل التخصصات 
-                        </span>
-                    </div>
-                </a>
-
-                <a  class="card" href="doc.html" >
-                    <div class="card-img">
-                        <p>
-                            🩺
-                        </p>
-                    </div>
-                    <div class="card-des">
-                        <p>
-                            طبيب
-                        </p>
-                        <span class="card-catagory">
-                            متخصص في علاج الأمراض وتشخيص الحالات الصحية
-                        </span>
-                    </div>
-                </a>
                 
-                <a  class="card" href="teacher.html" >
+                <li class="card" data-catagory="Computer" >
                     <div class="card-img">
-                        <p>
-                            👨‍🏫
-                        </p>
+                        <img src="img/woman.png" alt="">
                     </div>
                     <div class="card-des">
                         <p>
-                        أستاذ 
+                            الأستاذة سمية الورفلي
                         </p>
-                        <span class="card-catagory">
-                            يقوم بتعليم الطلاب في مختلف المجالات والمواد.
-                        </span>
+                        <div>
+                            <span class="card-catagory">
+                                حاسوب
+                            </span>
+                            <span class="star-rating">★★★☆☆</span>
+                        </div>
                     </div>
-                </a>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-teacher.html">احجز</a>
+                    </div>
+                </li>
 
-                <a  class="card" href="" >
+                <li class="card" data-catagory="Arabic" >
                     <div class="card-img">
-                        <p>
-                            🛠️  
-                        </p>
+                        <img src="img/profile.png" alt="">
                     </div>
                     <div class="card-des">
                         <p>
-                        حرفي
+                           الأستاذ أحمد الزاوي
                         </p>
-                        <span class="card-catagory">
-                            يمتلك مهارات عملية في مجالات يدوية وتقنية.
-                        </span>
+                        <div>
+                            <span class="card-catagory">
+                                لغة عربية
+                            </span>
+                            <span class="star-rating">★★★★★</span>
+                        </div>
                     </div>
-                </a>
-
-                <a  class="card" href="" >
-                    <div class="card-img">
-                        <p>
-                            💻
-                        </p>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-teacher1.html">احجز</a>
                     </div>
-                    <div class="card-des">
-                        <p>
-                        مبرمج
-                        </p>
-                        <span class="card-catagory">
-                            يقوم بتطوير تطبيقات ومواقع وحلول برمجية.
-                        </span>
-                    </div>
-                </a>
+                </li>
                 
+                <li class="card" data-catagory="Computer" >
+                    <div class="card-img">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            الأستاذ محمد بن عامر
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                حاسوب
+                            </span>
+                            <span class="star-rating">★☆☆☆☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" href="target="_blank" href="book-doc/book-teacher2.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="Science" >
+                    <div class="card-img">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            الأستاذ خالد الفيتوري
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                علوم
+                            </span>
+                            <span class="star-rating">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-teacher3.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="English" >
+                    <div class="card-img">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            الأستاذة فاطمة الشريف
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                لغة إنجليزية
+                            </span>
+                            <span class="star-rating">★★★☆☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-teacher4.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="Mathematics" >
+                    <div class="card-img">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            الأستاذ طارق السنوسي
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                رياضيات
+                            </span>
+                            <span class="star-rating">★★★★☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-teacher5.html">احجز</a>
+                    </div>
+                </li>
+                
+
+
+                <li class="card" data-catagory="Mathematics" >
+                    <div class="card-img">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            الأستاذة مريم النجار
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                رياضيات
+                            </span>
+                            <span class="star-rating">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-teacher6.html">احجز</a>
+                    </div>
+                </li>
+
+                
+
         </ul>
+        <button class="add-job-btn"> إضافة خدمة</button>
     </section>
         
     <footer>

@@ -35,3 +35,17 @@ function filterCards(cardFilter) {
 
     
 }
+
+function openOverlay1() {
+    document.getElementById("overlay1").style.display = "block";
+}
+function closeOverlay1() {
+    document.getElementById("overlay1").style.display = "none";
+}
+
+function openOverlay2() {
+    document.getElementById("overlay2").style.display = "block";
+}
+function closeOverlay2() {
+    document.getElementById("overlay2").style.display = "none";
+}

@@ -7,90 +7,65 @@
     <link rel="stylesheet" href="sign-in-style.css" />
 </head>
 <body>
-   
-    <nav>
-        <div class="nav-left">
-            <a  class="web-icon" href="index.html">
-             مِهَن            
-            </a>
-            <a class="icon-container" href="">
-                <svg class="acc-icon icon" fill="rgb(32, 30, 67)" viewBox="0 0 24 24"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></g></svg>
-            </a>
-        </div>
-        <div class="nav-right">
-            <a class="sign-btn" href="log-in.html" >
-                تسجيل الدخول
-            </a>
-        </div>
-    </nav>
-    
-    <section class="sign-sec">
             <div class="sign-container">
-                <p class="sing-sec-title">
+                <h2 class="sing-sec-title">
                     إنشاء حساب
-                </p>
+                </h2>
                 <div class="sign-sec-input">
                     <div>
-                        <label for="email" class="sign-sec-l">
-                            الاسم
+                        <label for="email" class="sign-sec-label">
+                            الاسم :
                         </label>
                         <input class="sign-input" id="name" type="email">
                     </div>
                     <div>
-                        <label for="email" class="sign-sec-l">
-                          اللقب 
+                        <label for="email" class="sign-sec-label">
+                          اللقب :
                         </label>
                         <input class="sign-input" id="name" type="email">
                     </div>
                     <div>
-                        <label for="email" class="sign-sec-l">
-                            البريد الاكتروني 
+                        <label for="email" class="sign-sec-label">
+                            البريد الاكتروني :
                         </label>
                         <input class="sign-input" id="email" type="email">
                     </div>
                     <div>
-                        <label for="password" class="sign-sec-l">
-                            كلمة المرور 
+                        <label for="password" class="sign-sec-label">
+                            كلمة المرور :
                         </label>
                         <input class="sign-input" id="password" type="password">
                     </div>
                     <div>
-                        <label for="password" class="sign-sec-l">
-                            تاكيد كلمة المرور
+                        <label for="password" class="sign-sec-label">
+                            تاكيد كلمة المرور :
                         </label>
                         <input class="sign-input" id="password" type="password">
+                    </div>
+                    <div >
+                        <p class="sign-sec-label">نوع المستخدم:</p>
+                        <div class="user-tybe-div">
+                            <label class="sign-sec-label">
+                                <input class="user-tybe" type="radio" name="userTybe" value="طالب">
+                                مزود خدمة
+                            </label>
+                            <label class="sign-sec-label">
+                                <input class="user-tybe" type="radio" name="userTybe" value="طالب"> 
+                                طالب خدمة
+                            </label>
+                        </div>
                     </div>
                     <button class="sign-sec-btn">
                      إنشاء حساب
                     </button>
                 </div>
-                <p>
+                <p class="sign-sec-label">
                      لديك حساب؟
                     <a href="log-in.html">
                         تسجيل الدخول
                     </a>
                 </p>
             </div>
-    </section>
 
-    <footer>
-        <p class="footer-title">
-            تواصل معنا
-        </p>
-        <div>
-            <a class="footer-text" href="">
-                تيكتوك
-            </a >
-            <a class="footer-text" href="">
-                فيسبوك
-            </a>
-            <a class="footer-text" href="">
-                انستغرام
-            </a>
-            <a class="footer-text"  href="">
-                رقم هاتف
-            </a >
-        </div>
-    </footer>
 </body>
 </html>

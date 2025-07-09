@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز موعد</title>
+    <link rel="stylesheet" href="book-style.css" />
+</head>
+<body>
+            <div class="sign-container">
+                <h2 class="sing-sec-title">
+                    حجز موعد مع أستاذ
+                </h2>
+                <div class="sign-sec-input">
+                    <div>
+                        <label for="email" class="sign-sec-label">
+                            الاسم :
+                        </label>
+                        <input class="sign-input" id="name" type="email" placeholder="أدخل اسمك" required>
+                    </div>
+                    <div>
+                        <label for="email" class="sign-sec-label">
+                          رقم الهاتف:
+                        </label>
+                        <input class="sign-input" id="name" type="tel" placeholder="09XXXXXXXX" required>
+                    </div>
+                    <div>
+                        <label for="email" class="sign-sec-label">
+                            التخصص:
+                        </label>
+                        <select class="specialty" name="specialty" disabled required>
+                            <option value="">استاذ</option>
+                        </select>
+                        <select  name="specialty" disabled required>
+                            <option> الأستاذ أحمد الزاوي لغة - عربية</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="time" class="sign-sec-label">
+                            تاريخ الموعد:
+                        </label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="time" class="sign-sec-label">
+                            الوقت:
+                        </label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div>
+                        <label for="time" class="sign-sec-label">
+                            ملاحظات (اختياري):
+                        </label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="أي تفاصيل إضافية..."></textarea>
+                    </div>
+                    <button class="sign-sec-btn">
+                     احجز الآن
+                    </button>
+                </div>
+            </div>
+
+</body>
+</html>

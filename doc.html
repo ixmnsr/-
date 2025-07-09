@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الرئيسية</title>
-    <link rel="stylesheet" href="index-style.css">
+    <title>طبيب</title>
+    <link rel="stylesheet" href="job-style.css">
 </head>
 <body> 
 
@@ -18,111 +18,184 @@
             </a>
         </div>
         <div class="nav-right">
-            <a class="sign-btn" href="log-in.html" target="_blank" >
+            <a class="sign-btn" href="log-in.html" >
                 تسجيل الدخول
             </a>
-            <a class="sign-btn" href="sign-in.html" target="_blank" >
+            <a class="sign-btn" href="sign-in.html" >
              إنشاء حساب
             </a>
         </div>
     </nav>
-    
-    <div class="header">
-        <p class="header-title">مِهَن </p>
-        <div>
-            <h1>فرصتك تبدأ من هنا</h1>
-            <p>في مِهَن، يمكنك نشر وظيفة أو طلب وظيفة بسهولة وفي دقائق</p>
-        </div>
-    </div>
 
     <section>
+        <div class="header">
+            <h2>
+                <a href="index.html">
+                    الرئيسية
+                </a>
+                /طبيب
+            </h2>
+        </div>
+        <div class="filter">
+            <div class="filter-search-div">
+                <input type="search" placeholder="ابحث عن الطبيب" class="card-search">
+            </div>
+            <div class="filter-btn-div">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="Dermatology">جلدية</button>
+                <button class="filter-btn" data-filter="children">  أطفال   </button>
+                <button class="filter-btn" data-filter="Esoteric">  باطنية   </button>
+                <button class="filter-btn" data-filter="surgery">  جراحة </button>
+                <button class="filter-btn" data-filter="nerves">  أعصاب </button>
+                <button class="filter-btn" data-filter="OG">  نساء وولادة </button>
+                
+            </div>
+        </div>
 
-        <h2>
-             كل حرفة ولها تخصص – اختر ما يناسبك
-        </h2>
         <ul class="card-list">
-
-                <a  class="card" href="all.html" >
-                    <div class="card-img">
-                        <p class="all-icon">
-                            🩺👨‍🏫<br>🛠️💻
-                        </p>
-                    </div>
-                    <div class="card-des">
-                        <p>
-                            الكل
-                        </p>
-                        <span class="card-catagory">
-                            كل التخصصات 
-                        </span>
-                    </div>
-                </a>
-
-                <a  class="card" href="doc.html" >
-                    <div class="card-img">
-                        <p>
-                            🩺
-                        </p>
-                    </div>
-                    <div class="card-des">
-                        <p>
-                            طبيب
-                        </p>
-                        <span class="card-catagory">
-                            متخصص في علاج الأمراض وتشخيص الحالات الصحية
-                        </span>
-                    </div>
-                </a>
                 
-                <a  class="card" href="teacher.html" >
+                <li class="card" data-catagory="surgery" >
                     <div class="card-img">
-                        <p>
-                            👨‍🏫
-                        </p>
+                        <img src="img/profile.png" alt="">
                     </div>
                     <div class="card-des">
                         <p>
-                        أستاذ 
+                            د. أحمد محمود
                         </p>
-                        <span class="card-catagory">
-                            يقوم بتعليم الطلاب في مختلف المجالات والمواد.
-                        </span>
+                        <div>
+                            <span class="card-catagory">
+                                جراحة
+                            </span>
+                            <span class="star-rating">★★★★★</span>
+                        </div>
                     </div>
-                </a>
-
-                <a  class="card" href="" >
-                    <div class="card-img">
-                        <p>
-                            🛠️  
-                        </p>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book.html">احجز</a>
                     </div>
-                    <div class="card-des">
-                        <p>
-                        حرفي
-                        </p>
-                        <span class="card-catagory">
-                            يمتلك مهارات عملية في مجالات يدوية وتقنية.
-                        </span>
-                    </div>
-                </a>
-
-                <a  class="card" href="" >
-                    <div class="card-img">
-                        <p>
-                            💻
-                        </p>
-                    </div>
-                    <div class="card-des">
-                        <p>
-                        مبرمج
-                        </p>
-                        <span class="card-catagory">
-                            يقوم بتطوير تطبيقات ومواقع وحلول برمجية.
-                        </span>
-                    </div>
-                </a>
+                </li>
                 
+                <li class="card" data-catagory="Esoteric" >
+                    <div class="card-img">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            د. محمد الحسن
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                باطنية
+                            </span>
+                            <span class="star-rating">★☆☆☆☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-2.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="nerves" >
+                    <div class="card-img">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            د. خالد عبد الله
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                أعصاب
+                            </span>
+                            <span class="star-rating">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-3.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="OG" >
+                    <div class="card-img">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            د. نورة أحمد
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                نساء وولادة 
+                            </span>
+                            <span class="star-rating" >★★★☆☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-4.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="Dermatology" >
+                    <div class="card-img">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            د. سامي الطيب
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                جلدية
+                            </span>
+                            <span class="star-rating">★★★★☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-5.html">احجز</a>
+                    </div>
+                </li>
+                
+                <li class="card" data-catagory="children" >
+                    <div class="card-img">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            د. مريم علي
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                أطفال
+                            </span>
+                            <span class="star-rating">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-6.html">احجز</a>
+                    </div>
+                </li>
+
+                <li class="card" data-catagory="children" >
+                    <div class="card-img">
+                        <img src="img/woman.png" alt="">
+                    </div>
+                    <div class="card-des">
+                        <p>
+                            د. ليلى صالح
+                        </p>
+                        <div>
+                            <span class="card-catagory">
+                                أطفال
+                            </span>
+                            <span class="star-rating">★★★☆☆</span>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <a class="book-btn" target="_blank" href="book-doc/book-7.html">احجز</a>
+                    </div>
+                </li>
+
         </ul>
+        <button class="add-job-btn"> إضافة خدمة</button>
     </section>
         
     <footer>
