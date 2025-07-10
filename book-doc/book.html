@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حجز موعد</title>
     <link rel="stylesheet" href="book-style.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
             <div class="sign-container">
@@ -16,13 +17,13 @@
                         <label for="email" class="sign-sec-label">
                             الاسم :
                         </label>
-                        <input class="sign-input" id="name" type="email" placeholder="أدخل اسمك" required>
+                        <input class="sign-input" id="email" type="email" placeholder="أدخل اسمك" required>
                     </div>
                     <div>
-                        <label for="email" class="sign-sec-label">
+                        <label for="tel" class="sign-sec-label">
                           رقم الهاتف:
                         </label>
-                        <input class="sign-input" id="name" type="tel" placeholder="09XXXXXXXX" required>
+                        <input class="sign-input" id="tel" type="tel" placeholder="09XXXXXXXX" required>
                     </div>
                     <div>
                         <label for="email" class="sign-sec-label">
@@ -36,7 +37,7 @@
                         </select>
                     </div>
                     <div>
-                        <label for="time" class="sign-sec-label">
+                        <label for="date" class="sign-sec-label">
                             تاريخ الموعد:
                         </label>
                         <input type="date" id="date" name="date" required>
@@ -48,7 +49,7 @@
                         <input type="time" id="time" name="time" required>
                     </div>
                     <div>
-                        <label for="time" class="sign-sec-label">
+                        <label for="notes" class="sign-sec-label">
                             ملاحظات (اختياري):
                         </label>
                         <textarea id="notes" name="notes" rows="3" placeholder="أي تفاصيل إضافية..."></textarea>
