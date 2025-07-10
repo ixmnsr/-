@@ -4,26 +4,101 @@
 html {
     margin: 0;
     padding: 0;
-    
 }
 
 body{
-    padding-block: 40px 0;
+    
     background-color: rgb(238, 238, 238);
     margin: 0;
     font-family: 'cairo', 'arial';
     
 }
-
-.sign-sec{
-    width: 100%;
-    height: 800px;
-    margin-block: 50px;
+.sign-container{
+    position: relative;
+    max-width: 800px;
+    
+    border: 2px  solid rgb(32, 30, 67);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(32, 30, 67, 0.5);
+    
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    margin: 50px auto;
+    
+}
+
+.left-sign-container{
+
+    width: 50%;
+    display: grid;
+    justify-items: center;
+}
+
+
+.header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+}
+.header-title {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 1px 1px 50px rgba(255, 255, 255, .3);
+    z-index: 1;
+    margin-block: 20px;
+}
+.header>div{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
+    text-shadow: 1px 1px 50px rgba(255, 255, 255, .3);
 }
+.header > div > h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    z-index: 1;
+}
+.header > div > p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+    
+}
+
+.curve-background{
+    position: absolute;
+    display: inline-table;
+    top: -0px;
+    right: -0px;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    clip-path: ellipse(100% 85% at 100% 50%);
+    background: rgb(32, 30, 67);
+}
+
+section{
+    width: 100%;
+    
+}
+
 
 
 .sing-sec-title {
@@ -85,18 +160,7 @@ body{
 
 
 
-.sign-container{
-    max-width: 500px;
-    border: 2px  solid rgb(32, 30, 67);;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 20px rgba(32, 30, 67, 0.5);
-    
-    margin: auto;
-    display: grid;
-    justify-items: center;
-    
-}
+
 
 .user-tybe-div {
     display: flex;
@@ -107,7 +171,7 @@ body{
     gap: 2px;
 } 
 
-input[type='radio'] {
+input[type='checkbox'] {
     accent-color: rgb(32, 30, 67);
 }
 .user-tybe {
@@ -119,4 +183,30 @@ input[type='radio'] {
     background-color: rgb(32, 30, 67);
 }
 
+.last-label{
+    text-align: center;
+}
 
+@media (width<850px) {
+    .sign-container{
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .left-sign-container{
+        width: 80%;
+    }
+    .sign-sec-input {
+        width: 90%;
+    }
+    .curve-background{
+        
+        transform: rotate(-90deg);
+        width: 100%;
+        height: 80%;
+        top:-350px
+        
+    }
+    section{
+        padding-inline: 20px;
+    }
+}

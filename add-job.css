@@ -4,24 +4,32 @@
 html {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body{
-    padding: 20px;
+
+
     background-color: rgb(238, 238, 238);
     margin: 0;
     font-family: 'cairo', 'arial';
     
 }
-
-.sign-sec{
+section{
     width: 100%;
-    height: 800px;
-    margin-block: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-inline: 20px;
+}
+
+.sign-container{
+    max-width: 500px;
+    border: 2px  solid rgb(32, 30, 67);;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(32, 30, 67, 0.5);
+    
+    margin: 50px auto;
+    display: grid;
+    justify-items: center;
     
 }
 
@@ -44,26 +52,26 @@ select,
 textarea {
     box-sizing: border-box;
     margin: 5px 0 5px 0;
-    padding: 0 7px 0 10px;
+    padding: 10px;
     width: 100%;
     height:43px;
     border-radius: 10px;
     border: 2px solid rgb(32, 30, 67);
     transition: .5s;
-    
 }
 textarea{
     padding-top: 5px;
     height: 50px;
     transition: .5s;
-    
 }
-
 input:focus,
 select:focus,
 textarea:focus {
-    outline: none;
     background-color: rgb(233, 233, 233);
+    outline: none;
+}
+.upload-photo{
+    padding: 10px;
 }
 
 .sign-sec-label {
@@ -98,18 +106,7 @@ textarea:focus {
 
 
 
-.sign-container{
-    max-width: 500px;
-    border: 2px  solid rgb(32, 30, 67);;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 20px rgba(32, 30, 67, 0.5);
-    
-    margin: auto;
-    display: grid;
-    justify-items: center;
-    
-}
+
 
 .user-tybe-div {
     display: flex;

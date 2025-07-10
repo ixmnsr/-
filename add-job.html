@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز موعد</title>
+    <link rel="stylesheet" href="add-job.css" />
+</head>
+<body>
+    <section>
+
+        <div class="sign-container">
+            <h2 class="sing-sec-title">
+                إضافة خدمة
+            </h2>
+            <div class="sign-sec-input">
+                <div>
+                    <label for="email" class="sign-sec-label">
+                        الاسم :
+                    </label>
+                    <input class="sign-input" id="email" type="email" placeholder="أدخل اسمك" required>
+                </div>
+                <div>
+                    <label for="email" class="sign-sec-label">
+                        رقم الهاتف:
+                    </label>
+                    <input class="sign-input" id="tel" type="tel" placeholder="09XXXXXXXX" required>
+                </div>
+                <div>
+                    <label for="email" class="sign-sec-label">
+                        التخصص:
+                    </label>
+                    <select class="specialty" name="specialty" id="carrer" onchange="updateOptions()" required>
+                        <option value="">اختر التخصص</option>
+                        <option value="doc">طبيب</option>
+                        <option value="teacher">استاذ</option>
+                    </select>
+                    <select  name="specialty" id="specialty" required>
+                        <option value="">اختر التخصص</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="photo">Upload a photo:</label>
+                    <input class="upload-photo" type="file" id="photo" name="photo" accept="image/*">
+                    
+                </div>
+                <button class="sign-sec-btn">
+                    حفظ التغييرات
+                </button>
+            </div>
+        </div>
+    </section>
+        
+        <script src="add-job.js"></script>
+</body>
+</html>
