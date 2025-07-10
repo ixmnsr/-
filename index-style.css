@@ -319,3 +319,16 @@ footer {
         font-size: 12px;
     }
 }
+@media (width < 800px) {
+    .header-title {
+        font-size: 70px;
+        margin-top: 0;
+        margin-bottom:0;
+    }
+    .header> div > h1{
+        font-size: 20px;
+    }
+    .header > div > p {
+        font-size: 12px;
+    }
+}
