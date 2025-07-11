@@ -172,10 +172,10 @@ section {
     padding-block: 100px;
     gap: 20px;
 }
-.color {
+.who-we-are-sec {
     background-color: rgb(32, 30, 67);
     position: relative;
-    padding-block: 100px 50px;
+    padding-block: 50px;
     
 }
 
@@ -323,7 +323,7 @@ footer {
     display: none;
 }
 
-.who-we-are-div{
+.who-we-are-sec-div{
     max-width: 65%;
     
     padding: 20px;
@@ -332,12 +332,12 @@ footer {
     color: white;
     
 }
-.who-we-are-div > h2 {
+.who-we-are-sec-div > h2 {
     font-size: 40px;
     text-align: center;
     
 }
-.who-we-are-div > p {
+.who-we-are-sec-div > p {
     font-size: 24px;
     text-align: center;
 }
@@ -363,11 +363,14 @@ footer {
     .header > div > p {
         font-size: 12px;
     }
-    .who-we-are-div > h2 {
+    .who-we-are-sec{
+        padding-block: 0px ;
+    }
+    .who-we-are-sec-div > h2 {
     font-size: 20px;
     
     }
-    .who-we-are-div > p {
+    .who-we-are-sec-div > p {
         font-size: 12px;
        
     }
