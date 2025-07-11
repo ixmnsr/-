@@ -153,6 +153,12 @@ nav {
     mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 2px),#000);
     background: rgb(238, 238, 238);
 }
+.who-sec-curve{
+    top: -1px;
+    right: 0;
+    transform: rotate(180deg);
+    
+}
 
 
 
@@ -165,6 +171,12 @@ section {
     align-items: center;
     padding-block: 100px;
     gap: 20px;
+}
+.color {
+    background-color: rgb(32, 30, 67);
+    position: relative;
+    padding-block: 100px 50px;
+    
 }
 
 .card-list{
@@ -311,6 +323,25 @@ footer {
     display: none;
 }
 
+.who-we-are-div{
+    max-width: 65%;
+    
+    padding: 20px;
+
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, .5);
+    color: white;
+    
+}
+.who-we-are-div > h2 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+.who-we-are-div > p {
+    font-size: 24px;
+    text-align: center;
+}
+
 
 @media (max-width:1530px) {
     nav {
@@ -331,5 +362,13 @@ footer {
     }
     .header > div > p {
         font-size: 12px;
+    }
+    .who-we-are-div > h2 {
+    font-size: 20px;
+    
+    }
+    .who-we-are-div > p {
+        font-size: 12px;
+       
     }
 }
